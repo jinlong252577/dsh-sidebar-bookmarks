@@ -1,0 +1,41 @@
+{
+  "name": "dsh-sidebar-bookmarks",
+  "version": "0.2.0",
+  "description": "侧栏书签面板：收藏网址，点击后在 DSH 右侧浏览器 tab 中打开。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "bookmarks",
+    "sidebar"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml"
+  ],
+  "license": "MIT",
+  "author": "jinlong252577",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinlong252577/dsh-sidebar-bookmarks.git"
+  },
+  "homepage": "https://github.com/jinlong252577/dsh-sidebar-bookmarks#readme",
+  "bugs": {
+    "url": "https://github.com/jinlong252577/dsh-sidebar-bookmarks/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}
